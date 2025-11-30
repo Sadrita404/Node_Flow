@@ -6,9 +6,7 @@ This project aims to bring no-code style automation into Web3, combining wallet 
 
 ---
 # Demo Video  Link :
-```
-
-```
+https://youtu.be/a_33riNJSkw
 ---
 # Project PPT Link :
 ```
