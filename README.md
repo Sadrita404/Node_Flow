@@ -1,81 +1,171 @@
-NodeFlow DApp
-A Web3 Workflow Builder DApp inspired by tools like n8n — allowing users to visually automate blockchain tasks, deploy smart contracts, and build decentralized workflows.
-Project Overview
-NodeFlow is a Blockchain Workflow Builder DApp built using:
-Next.js + TailwindCSS for the frontend
-Solidity for smart contracts
-Node.js + TypeScript for backend automation
-Wagmi + Ethers.js for wallet connectivity and contract deployment
-Optional AI integration for contract analysis and generation
-Features
-Visual workflow builder
-Smart contract deployment
-Multi-chain wallet connection
-Backend automation engine
-IPFS integration
-Extensible node-based logic similar to n8n or Zapier
-Tech Stack
-Next.js
-Node.js
-TypeScript
-Solidity
-Wagmi
-Ethers.js
-Pinata (IPFS)
-Alchemy RPC
-Project Setup Instructions
-Prerequisites
-Make sure you have the following installed:
-VS Code
-Download: https://code.visualstudio.com/download
-Node.js & NPM
-Recommended Version: Node.js 20 or newer
-Download: https://nodejs.org/en/download
-Running the Project
-1. Clone the Repository
-git clone <repository-url>
-cd nodeflow-dapp
-2. Install Dependencies
+# NodeFlow DApp — Web3 Workflow Builder
+
+NodeFlow is a Blockchain Workflow Automation DApp,On Aptos, inspired by tools like n8n, allowing developers to visually build decentralized workflows, deploy smart contracts, and automate on-chain logic — all inside a node-based interface.
+This project aims to bring no-code style automation into Web3, combining wallet connectivity, contract deployment, event triggers, backend automation, and IPFS storage into one unified experience.
+
+---
+# Demo Video  Link :
+```
+
+```
+---
+# Project PPT Link :
+```
+
+```
+---
+# Project Overview
+
+* ## NodeFlow is built with:
+
+ * Next.js + TailwindCSS → Modern frontend & UI
+ * Solidity → Smart contracts
+ * Node.js + TypeScript → Backend automation engine
+ * Wagmi + Ethers.js → Wallet connection & on-chain interactions
+ * Pinata (IPFS) → Storage for files / metadata
+ * Alchemy RPC → Blockchain provider
+ * (Optional) AI Modules → Contract generation, analysis, node suggestions
+
+
+---
+
+# Features
+
+##  Workflow & Automation
+* Visual node-based workflow builder
+* Drag-and-drop automation similar to n8n / Zapier
+* Real-time execution logs & result tracking
+
+##  Smart Contract Management
+* Deploy smart contracts directly from the DApp
+* Call contract functions
+* Event-based triggers
+* Multi-chain support (e.g., Sepolia, Polygon, etc.)
+
+##  Wallet & Connectivity
+* Wallet connection via Wagmi + WalletConnect
+* Supports MetaMask & multi-chain wallets
+
+##  Storage Layer
+* Upload files / JSON to IPFS using Pinata
+* Store workflow metadata in decentralized storage
+
+##  Optional AI Layer
+* AI-assisted contract generation
+* Contract vulnerability analysis
+* Auto-node generation based on user workflow prompts
+
+
+---
+# Tech Stack
+
+| Layer           | Technology                  |
+| --------------- | --------------------------- |
+| Frontend        | Next.js, React, TailwindCSS |
+| Backend         | Node.js, TypeScript         |
+| Smart Contracts | Solidity                    |
+| Wallet          | Wagmi, Ethers.js            |
+| Storage         | IPFS via Pinata             |
+| RPC Provider    | Alchemy                     |
+| Automation      | Node-based custom engine    |
+
+
+---
+
+# Project Structure
+```
+NodeFlow/
+├── app/                  # Next.js app router pages & routes  
+├── components/           # UI components (React + Tailwind)  
+├── contracts/            # Solidity smart contracts  
+├── lib/                  # Helper libraries (web3, IPFS, utilities)  
+├── config/               # Contract config (ABI, addresses)  
+├── store/                # State management  
+├── types/                # TypeScript interfaces & types  
+├── public/               # Static assets  
+│
+├── package.json
+├── tsconfig.json
+├── tailwind.config.ts
+├── next.config.ts
+└── README.md
+
+```
+
+---
+
+# Project Setup Instructions
+
+## 1)  Install Prerequisites
+* VS Code
+     
+```
+https://code.visualstudio.com/download
+
+```
+
+* Node.js (v20 recommended)
+
+```
+https://nodejs.org/en/download
+
+```
+---
+# 2) Clone the Repository
+```
+git clone
+cd Node_Flow
+```
+---
+# 3) Install Dependencies
+```
 npm install
-3. Configure Environment Variables
-Create a .env.local file in the project root and add:
-NEXT_PUBLIC_ALCHEMY_KEY=your_key
-NEXT_PUBLIC_WALLET_CONNECT_KEY=your_key
-PINATA_JWT=your_jwt
-You will need keys from:
-Service	URL
-Pinata (IPFS)	https://pinata.cloud/
-WalletConnect (Reown)	https://docs.reown.com/cloud/relay
-Alchemy	https://www.alchemy.com/
-Formspree (optional)	https://formspree.io/
-4. Run the Development Server
+```
+---
+# 4) Configure Environment Variables
+* Create a file:
+```
+.env.local
+```
+---
+# 5) Start the Development Server
+```
 npm run dev
-App will be available at:
+```
+* Your app will run at:
+```
 http://localhost:3000
-5. Compile & Deploy Smart Contracts
-Navigate to the smart contract folder:
-cd contracts
-npm install
-Compile:
-npx hardhat compile
-Deploy (example network):
-npx hardhat run scripts/deploy.js --network sepolia
-6. Connect Frontend with Smart Contract
-Add deployed contract address & ABI inside:
-/config/contract.js
-Final Code Setup (If Using Final Source Code)
-If you downloaded the ready-made source:
-Add all required API keys
-Install dependencies
-Sync smart contract details
-Run npm run dev
-This will start the full DApp.
-Important Services Used
-Service	Usage
-Pinata	IPFS file & JSON storage
-WalletConnect / Reown	Wallet connection
-Formspree	Form endpoints (optional)
-Alchemy	RPC & smart contract interactions
-Authors
-NodeFlow DApp – Open Web3 Workflow Builder
-Built with inspiration from decentralized automation platforms.
+```
+---
+# Important Services Used
+
+| Service                   | Purpose                         |
+| ------------------------- | ------------------------------- |
+| **Pinata**                | IPFS file & metadata storage    |
+| **WalletConnect / Reown** | Seamless wallet connection      |
+| **Formspree**             | Email forms (optional)          |
+| **Alchemy**               | RPC, smart contract interaction |
+
+---
+
+# Contributing
+* Pull requests are welcome!
+* Ways to contribute:
+* Add new workflow nodes
+* Improve UI/UX for the builder
+* Integrate more blockchain networks
+* Add AI nodes
+* Write docs / demos
+
+---
+# License
+* NodeFlow is open-source under the MIT License.
+* You may modify, use, and distribute freely.
+---
+# Thanks for Exploring NodeFlow on Aptos
+Thank you for exploring NodeFlow — proudly built with suppo
+rt for the Aptos blockchain, enabling fast, secure, and scalable Move-based automation. Your interest and contributions help push the Aptos ecosystem forward!
+
+
+
+
