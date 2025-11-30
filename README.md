@@ -1,4 +1,5 @@
-# NodeFlow DApp — Web3 Workflow Builder
+# NodeFlow DApp — <img width="392" height="365" alt="Screenshot 2025-11-29 at 11 40 41 PM" src="https://github.com/user-attachments/assets/c28551cb-2eec-4ca5-917e-51b8497a1712" />
+Web3 Workflow Builder
 
 NodeFlow is a Blockchain Workflow Automation DApp,On Aptos, inspired by tools like n8n, allowing developers to visually build decentralized workflows, deploy smart contracts, and automate on-chain logic — all inside a node-based interface.
 This project aims to bring no-code style automation into Web3, combining wallet connectivity, contract deployment, event triggers, backend automation, and IPFS storage into one unified experience.
